@@ -1,0 +1,131 @@
+:root {
+    --font-color: #f0f0f0;
+    --nav-color:  rgb(36, 83, 122);
+    --hover-color: rgb(20, 38, 53);
+    --highlight-color: crimson;
+    --darker-color: #303841;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    overscroll-behavior: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--nav-color);
+}
+
+.monospace-font {
+    font-family: monospace;
+}
+
+.white-text {
+    color: var(--font-color);
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2rem;
+    padding: 1.3rem;
+}
+
+.nav-list a:hover {
+    background-color: var(--hover-color);
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.undertitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--highlight-color);
+}
+
+.projects-section {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: rgb(72, 82, 92);
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-tile {
+    background: var(--darker-color);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.btn-show-all {
+    font-size: 2rem;
+    background: var(--darker-color);
+    transition: background 0.3s ease-out;
+}
