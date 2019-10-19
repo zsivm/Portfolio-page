@@ -1,6 +1,6 @@
 :root {
     --font-color: #f0f0f0;
-    --nav-color:  rgb(36, 83, 122);
+    --blue-color:  rgb(36, 83, 122);
     --hover-color: rgb(20, 38, 53);
     --highlight-color: crimson;
     --darker-color: #303841;
@@ -31,7 +31,16 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--nav-color);
+    background-color: var(--blue-color);
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--darker-color);
+    border-top: 4px solid var(--blue-color);
 }
 
 .monospace-font {
@@ -52,6 +61,10 @@ nav {
 
 .small-font {
     font-size: 1.5rem;
+}
+
+.tiny-font {
+    font-size: 1rem;
 }
 
 .white-text {
