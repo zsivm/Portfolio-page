@@ -20,10 +20,6 @@ a {
     color: var(--font-color);
 }
 
-h1 {
-    font-size: 4rem;
-}
-
 h2 {
     font-size: 3rem;
 }
@@ -42,6 +38,22 @@ nav {
     font-family: monospace;
 }
 
+.huge-font {
+    font-size: 5rem;
+}
+
+.big-font {
+    font-size: 4rem;
+}
+
+.middle-font {
+    font-size: 2rem;
+}
+
+.small-font {
+    font-size: 1.5rem;
+}
+
 .white-text {
     color: var(--font-color);
 }
@@ -54,7 +66,6 @@ nav {
 
 .nav-list a {
     display: block;
-    font-size: 2rem;
     padding: 1.3rem;
 }
 
@@ -74,7 +85,6 @@ nav {
 }
 
 .undertitle {
-    font-size: 2.5rem;
     font-weight: 600;
     font-style: italic;
     color: var(--highlight-color);
@@ -84,6 +94,23 @@ nav {
     text-align: center;
     padding: 6rem 2rem;
     background: rgb(72, 82, 92);
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--darker-color);
+}
+
+.contact-links {
+    padding-top: 3rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
 }
 
 .projects-section-header {
@@ -114,8 +141,11 @@ nav {
 }
 
 .project-title {
-    font-size: 2rem;
     padding: 2rem 0.5rem;
+}
+
+.small-padding {
+    padding: 1.2rem;
 }
 
 .btn {
@@ -125,7 +155,6 @@ nav {
 }
 
 .btn-show-all {
-    font-size: 2rem;
     background: var(--darker-color);
     transition: background 0.3s ease-out;
 }
